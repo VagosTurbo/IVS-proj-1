@@ -34,30 +34,64 @@
 
 class EmptyTable : public ::testing::Test {
 protected:
-    hash_map_t* table;
+    hash_map_t* map;
+
+    virtual void SetUp(){
+        map = hash_map_ctor();
+    }
+
+    virtual void TearDown(){
+        hash_map_dtor(map);
+    }
 };
 
 class NonEmptyTable : public ::testing::Test {
 protected:
-    hash_map_t* table;
+    hash_map_t* map;
 
-    void SetUp(){
-        hash_map_item_t item;
+    virtual void SetUp(){
+        map = hash_map_ctor();
+        hash_map_put(map, "hello", 5);
+        hash_map_put(map, "hi", 10);
+        hash_map_put(map, "howdy", 15);
+        hash_map_put(map, "hola", 20);
     }
 
+    virtual void TearDown(){
+        hash_map_dtor(map);
+    }
 };
 
-
-TEST(BasicTests, TableConstructor) {
-    hash_map_t* table;
-    EXPECT_NE(table, nullptr);
-    EXPECT_NE(table->last, nullptr);
+TEST_F(EmptyTable, contains){
+    EXPECT_FALSE(hash_map_contains(map, "hello"));
 }
 
-TEST(BasicTests, TableDestructor) {
-    hash_map_t* table;
-    EXPECT_NE(table, nullptr);
-    EXPECT_NE(table->last, nullptr);
+TEST_F(EmptyTable, get){
+    int value = 9;
+    EXPECT_EQ(hash_map_get(map, "hello", &value), KEY_ERROR);
+}
+
+TEST_F(EmptyTable, size){
+    EXPECT_EQ(hash_map_size(map), 0);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+TEST_F(NonEmptyTable, contains){
+    EXPECT_TRUE(hash_map_contains(map, "hello"));
+    EXPECT_FALSE(hash_map_contains(map, "aaaa"));
+}
+
+TEST_F(NonEmptyTable, get){
+    int value = 5;
+    EXPECT_EQ(hash_map_get(map, "hello", &value), OK);
+    value = 6;
+    EXPECT_EQ(hash_map_get(map, "hello", &value), OK);
+}
+
+TEST_F(NonEmptyTable, size){
+    EXPECT_EQ(hash_map_size(map), 4);
 }
 
 
