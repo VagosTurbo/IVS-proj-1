@@ -90,6 +90,11 @@ TEST_F(EmptyTable, reserve){
     EXPECT_EQ(hash_map_capacity(map), 10);
 }
 
+TEST_F(EmptyTable, pop){
+    int value = 1;
+    EXPECT_EQ(hash_map_pop(map, "hola", &value), KEY_ERROR);
+}
+
 //////////////////////////////////////////////////////////////////////////////
 
 TEST_F(NonEmptyTable, contains){
@@ -102,7 +107,6 @@ TEST_F(NonEmptyTable, get){
     EXPECT_EQ(hash_map_get(map, "hello", &value), OK);
     value = 6;
     EXPECT_EQ(hash_map_get(map, "hell", &value), KEY_ERROR);
-    
 }
 
 TEST_F(NonEmptyTable, size){
@@ -128,6 +132,13 @@ TEST_F(NonEmptyTable, reserve){
     EXPECT_EQ(hash_map_reserve(map, 9),OK);
     EXPECT_EQ(hash_map_capacity(map), 9);
     EXPECT_EQ(hash_map_reserve(map, 2), VALUE_ERROR);
+}
+
+TEST_F(NonEmptyTable, pop){
+    int value = 1;
+    EXPECT_EQ(hash_map_pop(map, "hola", &value), OK);
+    EXPECT_EQ(hash_map_contains(map, "hola"), false);
+    
 }
 
 /*** Konec souboru white_box_tests.cpp ***/
