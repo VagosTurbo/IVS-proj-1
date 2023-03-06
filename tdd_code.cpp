@@ -3,7 +3,7 @@
 // Purpose:     Test Driven Development - graph
 //
 // $NoKeywords: $ivs_project_1 $tdd_code.cpp
-// $Author:     JMENO PRIJMENI <xlogin00@stud.fit.vutbr.cz>
+// $Author:     BORIS SEMANCO <xseman06@stud.fit.vutbr.cz>
 // $Date:       $2023-03-07
 //============================================================================//
 /**
@@ -23,6 +23,7 @@ Graph::~Graph(){}
 
 std::vector<Node*> Graph::nodes() {
     std::vector<Node*> nodes;
+    //skopiruje do nodes vsetky uzly z m_nodes
     for(int i = 0; i < m_nodes.size(); i++){
         nodes.push_back(&m_nodes[i]);
     }
@@ -32,6 +33,7 @@ std::vector<Node*> Graph::nodes() {
 
 std::vector<Edge> Graph::edges() const{
     std::vector<Edge> edges;
+    //skopiruje vsetky hrany z m_edges do edges
     for(int i = 0; i < m_edges.size(); i++){
         edges.push_back(m_edges[i]);
     }
@@ -40,13 +42,14 @@ std::vector<Edge> Graph::edges() const{
 }
 
 Node* Graph::addNode(size_t nodeId) {
-
+    //kontrola ci uz uzol s rovnakym id nieje v grafe
     for(auto node : m_nodes){
         if(node.id == nodeId){
             return nullptr;
         }
     }
 
+    //vytvori uzol a prida ho do vektoru uzlov
     Node node;
     node.id = nodeId;
     node.color = 0;
@@ -55,13 +58,16 @@ Node* Graph::addNode(size_t nodeId) {
 }
 
 bool Graph::addEdge(const Edge& edge){
+    //kontrola ci zadana hrana nieje smycka alebo ci sa uz nenachadza v grafe
     if(edge.a == edge.b || containsEdge(edge)){
         return false;
     }
 
+    //ak je v hrane uzol ktory este nieje v grafe tak vytvori aj uzol
     addNode(edge.a);
     addNode(edge.b);
 
+    //zapise novu hranu do vektoru hran
     m_edges.push_back(edge);
     return true;
 
@@ -74,7 +80,8 @@ void Graph::addMultipleEdges(const std::vector<Edge>& edges) {
 }
 
 Node* Graph::getNode(size_t nodeId){
-    for (int i = 0; i < m_nodes.size(); i++){
+    //postupne prechadza voktor uzlov kym nenajde uzol so zadanym id a vrati jeho adresu
+    for (int i = 0; i < nodeCount(); i++){
         if(m_nodes[i].id == nodeId){
             return &m_nodes[i];
         }
@@ -83,6 +90,7 @@ Node* Graph::getNode(size_t nodeId){
 }
 
 bool Graph::containsEdge(const Edge& edge) const{
+    //prejde kazdu hranu vo vektore m_edges a skontroluje ci sa tam uz nenachadza zadana hrana
     for(auto m_edge : m_edges){
         if((edge.a == m_edge.a && edge.b == m_edge.b) || (edge.a == m_edge.b && edge.b == m_edge.a)){
             return true;
@@ -93,14 +101,15 @@ bool Graph::containsEdge(const Edge& edge) const{
 
 void Graph::removeNode(size_t nodeId){
 
+    //kontrola ci sa vobec uzol nachadza v grafe
     if(getNode(nodeId) == nullptr){
         throw std::out_of_range("Node not in graph");
     }
 
-    for (int i = 0; i < m_nodes.size(); i++){
+    for (int i = 0; i < nodeCount(); i++){
         if (m_nodes[i].id == nodeId){
             m_nodes.erase(m_nodes.begin() + i);
-            for (int j = 0; j < m_edges.size(); j++){
+            for (int j = 0; j < edgeCount(); j++){
                 if(m_edges[j].a == nodeId || m_edges[j].b == nodeId){
                     removeEdge(m_edges[j]);
                     j--;
@@ -112,9 +121,10 @@ void Graph::removeNode(size_t nodeId){
 }
 
 void Graph::removeEdge(const Edge& edge){
-    for (int i = 0; i < m_edges.size(); i++){
+    for (int i = 0; i < edgeCount(); i++){
         if(containsEdge(edge)){
             m_edges.erase(m_edges.begin() + i);
+            //ak vymaze hranu s uzlom ktory sa nachadzal len v tejto hrane tak vymaze aj uzol
             if(nodeDegree(edge.a) < 1){
                 removeNode(edge.a);
             }
@@ -161,14 +171,6 @@ size_t Graph::graphDegree() const{
 }
 
 void Graph::coloring(){
-    int max_color = graphDegree() + 1;
-    std::vector<int> Colors;
-    for (int i = 0; i < max_color; i++){
-        Colors[i] = i;
-    }
-    for(int i = 0; i < m_nodes.size(); i++){
-        
-    }
 }
 
 void Graph::clear() {
