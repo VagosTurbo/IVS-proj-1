@@ -75,6 +75,20 @@ TEST_F(EmptyTable, size){
     EXPECT_EQ(hash_map_size(map), 0);
 }
 
+TEST_F(EmptyTable, capacity){
+    EXPECT_EQ(hash_map_capacity(map), 8);
+}
+
+TEST_F(EmptyTable, remove){
+    EXPECT_EQ(hash_map_remove(map, "hello"), KEY_ERROR);
+}
+
+TEST_F(EmptyTable, reserve){
+    EXPECT_EQ(hash_map_reserve(map, 30), OK);
+    EXPECT_EQ(hash_map_capacity(map), 30);
+    EXPECT_EQ(hash_map_reserve(map, 10), OK);
+    EXPECT_EQ(hash_map_capacity(map), 10);
+}
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -87,12 +101,33 @@ TEST_F(NonEmptyTable, get){
     int value = 5;
     EXPECT_EQ(hash_map_get(map, "hello", &value), OK);
     value = 6;
-    EXPECT_EQ(hash_map_get(map, "hello", &value), OK);
+    EXPECT_EQ(hash_map_get(map, "hell", &value), KEY_ERROR);
+    
 }
 
 TEST_F(NonEmptyTable, size){
     EXPECT_EQ(hash_map_size(map), 4);
 }
 
+TEST_F(NonEmptyTable, cap){
+    EXPECT_EQ(hash_map_capacity(map), 8);
+    hash_map_put(map, "a", 25);
+    hash_map_put(map, "b", 30);
+    hash_map_put(map, "c", 35);
+    hash_map_put(map, "d", 40);
+    EXPECT_EQ(hash_map_capacity(map), 16);
+}
+
+TEST_F(NonEmptyTable, remove){
+    EXPECT_EQ(hash_map_remove(map, "hello"), OK);
+    EXPECT_FALSE(hash_map_contains(map, "hello"));
+    EXPECT_EQ(hash_map_remove(map, "hello"), KEY_ERROR);
+}
+
+TEST_F(NonEmptyTable, reserve){
+    EXPECT_EQ(hash_map_reserve(map, 9),OK);
+    EXPECT_EQ(hash_map_capacity(map), 9);
+    EXPECT_EQ(hash_map_reserve(map, 2), VALUE_ERROR);
+}
 
 /*** Konec souboru white_box_tests.cpp ***/
