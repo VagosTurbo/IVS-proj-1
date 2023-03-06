@@ -203,8 +203,8 @@ public:
 
 protected:
     // doplňte vhodné struktury
-    std::vector<Node> m_nodes;
-    std::vector<Edge> m_edges;
+    std::vector<Node> v_nodes;
+    std::vector<Edge> v_edges;
 
 };
 
