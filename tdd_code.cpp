@@ -24,7 +24,7 @@ Graph::~Graph(){}
 std::vector<Node*> Graph::nodes() {
     std::vector<Node*> nodes;
     //skopiruje do nodes vsetky uzly z m_nodes
-    for(int i = 0; i < m_nodes.size(); i++){
+    for(int i = 0; i < nodeCount(); i++){
         nodes.push_back(&m_nodes[i]);
     }
 
@@ -34,7 +34,7 @@ std::vector<Node*> Graph::nodes() {
 std::vector<Edge> Graph::edges() const{
     std::vector<Edge> edges;
     //skopiruje vsetky hrany z m_edges do edges
-    for(int i = 0; i < m_edges.size(); i++){
+    for(int i = 0; i < edgeCount(); i++){
         edges.push_back(m_edges[i]);
     }
 
