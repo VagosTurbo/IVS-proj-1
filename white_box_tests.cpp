@@ -32,10 +32,16 @@
 //       indexu
 //============================================================================//
 
-/*** Konec souboru white_box_tests.cpp ***/
+class EmptyTable : public ::testing::Test {
+protected:
+    hash_map table;
+};
 
 
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+TEST(BasicTests, TableConstructor) {
+    hash_map_t* table;
+    EXPECT_NE(table, nullptr);
+    EXPECT_EQ(table->allocated, table->used);
 }
+
+/*** Konec souboru white_box_tests.cpp ***/

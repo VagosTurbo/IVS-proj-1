@@ -1,18 +1,19 @@
-Start testing: Mar 02 15:49 CET
+Start testing: Mar 06 13:48 CET
 ----------------------------------------------------------
-1/37 Testing: EmptyTree.TestEmptyTree
-1/37 Test: EmptyTree.TestEmptyTree
-Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=EmptyTree.TestEmptyTree" "--gtest_also_run_disabled_tests"
+1/42 Testing: EmptyTree.InsertNode
+1/42 Test: EmptyTree.InsertNode
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=EmptyTree.InsertNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyTree.TestEmptyTree" start time: Mar 02 15:49 CET
+"EmptyTree.InsertNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
-Note: Google Test filter = EmptyTree.TestEmptyTree
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTree.InsertNode
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyTree
-[ RUN      ] EmptyTree.TestEmptyTree
-[       OK ] EmptyTree.TestEmptyTree (0 ms)
+[ RUN      ] EmptyTree.InsertNode
+[       OK ] EmptyTree.InsertNode (0 ms)
 [----------] 1 test from EmptyTree (0 ms total)
 
 [----------] Global test environment tear-down
@@ -22,23 +23,24 @@ Note: Google Test filter = EmptyTree.TestEmptyTree
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyTree.TestEmptyTree" end time: Mar 02 15:49 CET
-"EmptyTree.TestEmptyTree" time elapsed: 00:00:00
+"EmptyTree.InsertNode" end time: Mar 06 13:48 CET
+"EmptyTree.InsertNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/37 Testing: EmptyTree.InsertNode_EmptyTree
-2/37 Test: EmptyTree.InsertNode_EmptyTree
-Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=EmptyTree.InsertNode_EmptyTree" "--gtest_also_run_disabled_tests"
+2/42 Testing: EmptyTree.DeleteNode
+2/42 Test: EmptyTree.DeleteNode
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=EmptyTree.DeleteNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyTree.InsertNode_EmptyTree" start time: Mar 02 15:49 CET
+"EmptyTree.DeleteNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
-Note: Google Test filter = EmptyTree.InsertNode_EmptyTree
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTree.DeleteNode
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyTree
-[ RUN      ] EmptyTree.InsertNode_EmptyTree
-[       OK ] EmptyTree.InsertNode_EmptyTree (0 ms)
+[ RUN      ] EmptyTree.DeleteNode
+[       OK ] EmptyTree.DeleteNode (0 ms)
 [----------] 1 test from EmptyTree (0 ms total)
 
 [----------] Global test environment tear-down
@@ -48,24 +50,79 @@ Note: Google Test filter = EmptyTree.InsertNode_EmptyTree
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyTree.InsertNode_EmptyTree" end time: Mar 02 15:49 CET
-"EmptyTree.InsertNode_EmptyTree" time elapsed: 00:00:00
+"EmptyTree.DeleteNode" end time: Mar 06 13:48 CET
+"EmptyTree.DeleteNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/37 Testing: EmptyTree.DeleteNode_EmptyTree
-3/37 Test: EmptyTree.DeleteNode_EmptyTree
-Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=EmptyTree.DeleteNode_EmptyTree" "--gtest_also_run_disabled_tests"
+3/42 Testing: EmptyTree.FindNode
+3/42 Test: EmptyTree.FindNode
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=EmptyTree.FindNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyTree.DeleteNode_EmptyTree" start time: Mar 02 15:49 CET
+"EmptyTree.FindNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
-Note: Google Test filter = EmptyTree.DeleteNode_EmptyTree
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTree.FindNode
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyTree
-[ RUN      ] EmptyTree.DeleteNode_EmptyTree
-[       OK ] EmptyTree.DeleteNode_EmptyTree (0 ms)
+[ RUN      ] EmptyTree.FindNode
+[       OK ] EmptyTree.FindNode (0 ms)
 [----------] 1 test from EmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTree.FindNode" end time: Mar 06 13:48 CET
+"EmptyTree.FindNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/42 Testing: NonEmptyTree.InsertNode
+4/42 Test: NonEmptyTree.InsertNode
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=NonEmptyTree.InsertNode" "--gtest_also_run_disabled_tests"
+Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
+"NonEmptyTree.InsertNode" start time: Mar 06 13:48 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTree.InsertNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTree
+[ RUN      ] NonEmptyTree.InsertNode
+[       OK ] NonEmptyTree.InsertNode (0 ms)
+[----------] 1 test from NonEmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTree.InsertNode" end time: Mar 06 13:48 CET
+"NonEmptyTree.InsertNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/42 Testing: NonEmptyTree.DeleteNode
+5/42 Test: NonEmptyTree.DeleteNode
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=NonEmptyTree.DeleteNode" "--gtest_also_run_disabled_tests"
+Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
+"NonEmptyTree.DeleteNode" start time: Mar 06 13:48 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTree.DeleteNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTree
+[ RUN      ] NonEmptyTree.DeleteNode
+[       OK ] NonEmptyTree.DeleteNode (0 ms)
+[----------] 1 test from NonEmptyTree (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
@@ -74,24 +131,25 @@ Note: Google Test filter = EmptyTree.DeleteNode_EmptyTree
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyTree.DeleteNode_EmptyTree" end time: Mar 02 15:49 CET
-"EmptyTree.DeleteNode_EmptyTree" time elapsed: 00:00:00
+"NonEmptyTree.DeleteNode" end time: Mar 06 13:48 CET
+"NonEmptyTree.DeleteNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/37 Testing: EmptyTree.FindNode_EmptyTree
-4/37 Test: EmptyTree.FindNode_EmptyTree
-Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=EmptyTree.FindNode_EmptyTree" "--gtest_also_run_disabled_tests"
+6/42 Testing: NonEmptyTree.FindNode
+6/42 Test: NonEmptyTree.FindNode
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=NonEmptyTree.FindNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyTree.FindNode_EmptyTree" start time: Mar 02 15:49 CET
+"NonEmptyTree.FindNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
-Note: Google Test filter = EmptyTree.FindNode_EmptyTree
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTree.FindNode
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from EmptyTree
-[ RUN      ] EmptyTree.FindNode_EmptyTree
-[       OK ] EmptyTree.FindNode_EmptyTree (0 ms)
-[----------] 1 test from EmptyTree (0 ms total)
+[----------] 1 test from NonEmptyTree
+[ RUN      ] NonEmptyTree.FindNode
+[       OK ] NonEmptyTree.FindNode (0 ms)
+[----------] 1 test from NonEmptyTree (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
@@ -100,15 +158,96 @@ Note: Google Test filter = EmptyTree.FindNode_EmptyTree
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyTree.FindNode_EmptyTree" end time: Mar 02 15:49 CET
-"EmptyTree.FindNode_EmptyTree" time elapsed: 00:00:00
+"NonEmptyTree.FindNode" end time: Mar 06 13:48 CET
+"NonEmptyTree.FindNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/37 Testing: NonEmptyGraph.nodes
-5/37 Test: NonEmptyGraph.nodes
+7/42 Testing: TreeAxioms.Axiom1
+7/42 Test: TreeAxioms.Axiom1
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=TreeAxioms.Axiom1" "--gtest_also_run_disabled_tests"
+Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
+"TreeAxioms.Axiom1" start time: Mar 06 13:48 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TreeAxioms.Axiom1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TreeAxioms
+[ RUN      ] TreeAxioms.Axiom1
+[       OK ] TreeAxioms.Axiom1 (0 ms)
+[----------] 1 test from TreeAxioms (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TreeAxioms.Axiom1" end time: Mar 06 13:48 CET
+"TreeAxioms.Axiom1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/42 Testing: TreeAxioms.Axiom2
+8/42 Test: TreeAxioms.Axiom2
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=TreeAxioms.Axiom2" "--gtest_also_run_disabled_tests"
+Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
+"TreeAxioms.Axiom2" start time: Mar 06 13:48 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TreeAxioms.Axiom2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TreeAxioms
+[ RUN      ] TreeAxioms.Axiom2
+[       OK ] TreeAxioms.Axiom2 (0 ms)
+[----------] 1 test from TreeAxioms (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TreeAxioms.Axiom2" end time: Mar 06 13:48 CET
+"TreeAxioms.Axiom2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/42 Testing: TreeAxioms.Axiom3
+9/42 Test: TreeAxioms.Axiom3
+Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/black_box_test" "--gtest_filter=TreeAxioms.Axiom3" "--gtest_also_run_disabled_tests"
+Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
+"TreeAxioms.Axiom3" start time: Mar 06 13:48 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TreeAxioms.Axiom3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TreeAxioms
+[ RUN      ] TreeAxioms.Axiom3
+[       OK ] TreeAxioms.Axiom3 (0 ms)
+[----------] 1 test from TreeAxioms (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TreeAxioms.Axiom3" end time: Mar 06 13:48 CET
+"TreeAxioms.Axiom3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/42 Testing: NonEmptyGraph.nodes
+10/42 Test: NonEmptyGraph.nodes
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.nodes" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.nodes" start time: Mar 02 15:49 CET
+"NonEmptyGraph.nodes" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -117,38 +256,25 @@ Note: Google Test filter = NonEmptyGraph.nodes
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.nodes
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:56: Failure
-Value of: nodes
-Expected: has 5 elements and there exists some permutation of elements such that:
- - element #0 is an object whose given field is equal to 1, and
- - element #1 is an object whose given field is equal to 4, and
- - element #2 is an object whose given field is equal to 5, and
- - element #3 is an object whose given field is equal to 6, and
- - element #4 is an object whose given field is equal to 7
-  Actual: {}
-[  FAILED  ] NonEmptyGraph.nodes (0 ms)
+[       OK ] NonEmptyGraph.nodes (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.nodes
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.nodes" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.nodes" end time: Mar 06 13:48 CET
 "NonEmptyGraph.nodes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/37 Testing: NonEmptyGraph.edges
-6/37 Test: NonEmptyGraph.edges
+11/42 Testing: NonEmptyGraph.edges
+11/42 Test: NonEmptyGraph.edges
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.edges" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.edges" start time: Mar 02 15:49 CET
+"NonEmptyGraph.edges" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -157,39 +283,25 @@ Note: Google Test filter = NonEmptyGraph.edges
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.edges
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:71: Failure
-Value of: edges
-Expected: has 6 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 4}, and
- - element #1 is equal to {1, 5}, and
- - element #2 is equal to {4, 6}, and
- - element #3 is equal to {5, 6}, and
- - element #4 is equal to {5, 7}, and
- - element #5 is equal to {7, 6}
-  Actual: {}
-[  FAILED  ] NonEmptyGraph.edges (0 ms)
+[       OK ] NonEmptyGraph.edges (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.edges
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.edges" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.edges" end time: Mar 06 13:48 CET
 "NonEmptyGraph.edges" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/37 Testing: NonEmptyGraph.addNode
-7/37 Test: NonEmptyGraph.addNode
+12/42 Testing: NonEmptyGraph.addNode
+12/42 Test: NonEmptyGraph.addNode
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.addNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.addNode" start time: Mar 02 15:49 CET
+"NonEmptyGraph.addNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -198,31 +310,25 @@ Note: Google Test filter = NonEmptyGraph.addNode
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.addNode
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:77: Failure
-Expected: (node) != (nullptr), actual: NULL vs (nullptr)
-[  FAILED  ] NonEmptyGraph.addNode (0 ms)
+[       OK ] NonEmptyGraph.addNode (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.addNode
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.addNode" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.addNode" end time: Mar 06 13:48 CET
 "NonEmptyGraph.addNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/37 Testing: NonEmptyGraph.addEdge
-8/37 Test: NonEmptyGraph.addEdge
+13/42 Testing: NonEmptyGraph.addEdge
+13/42 Test: NonEmptyGraph.addEdge
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.addEdge" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.addEdge" start time: Mar 02 15:49 CET
+"NonEmptyGraph.addEdge" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -231,77 +337,25 @@ Note: Google Test filter = NonEmptyGraph.addEdge
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.addEdge
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:101: Failure
-Value of: graph.addEdge(Edge(1, 8))
-  Actual: false
-Expected: true
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:103: Failure
-Value of: edges
-Expected: has 7 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 4}, and
- - element #1 is equal to {1, 5}, and
- - element #2 is equal to {1, 8}, and
- - element #3 is equal to {4, 6}, and
- - element #4 is equal to {5, 6}, and
- - element #5 is equal to {5, 7}, and
- - element #6 is equal to {7, 6}
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:108: Failure
-Value of: edges
-Expected: has 7 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 4}, and
- - element #1 is equal to {1, 5}, and
- - element #2 is equal to {1, 8}, and
- - element #3 is equal to {4, 6}, and
- - element #4 is equal to {5, 6}, and
- - element #5 is equal to {5, 7}, and
- - element #6 is equal to {7, 6}
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:113: Failure
-Value of: edges
-Expected: has 7 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 4}, and
- - element #1 is equal to {1, 5}, and
- - element #2 is equal to {1, 8}, and
- - element #3 is equal to {4, 6}, and
- - element #4 is equal to {5, 6}, and
- - element #5 is equal to {5, 7}, and
- - element #6 is equal to {7, 6}
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:118: Failure
-Value of: edges
-Expected: has 7 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 4}, and
- - element #1 is equal to {1, 5}, and
- - element #2 is equal to {1, 8}, and
- - element #3 is equal to {4, 6}, and
- - element #4 is equal to {5, 6}, and
- - element #5 is equal to {5, 7}, and
- - element #6 is equal to {7, 6}
-  Actual: {}
-[  FAILED  ] NonEmptyGraph.addEdge (0 ms)
+[       OK ] NonEmptyGraph.addEdge (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.addEdge
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.addEdge" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.addEdge" end time: Mar 06 13:48 CET
 "NonEmptyGraph.addEdge" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/37 Testing: NonEmptyGraph.addMultipleEdges
-9/37 Test: NonEmptyGraph.addMultipleEdges
+14/42 Testing: NonEmptyGraph.addMultipleEdges
+14/42 Test: NonEmptyGraph.addMultipleEdges
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.addMultipleEdges" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.addMultipleEdges" start time: Mar 02 15:49 CET
+"NonEmptyGraph.addMultipleEdges" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -310,55 +364,25 @@ Note: Google Test filter = NonEmptyGraph.addMultipleEdges
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.addMultipleEdges
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:130: Failure
-Value of: graph.nodes()
-Expected: has 9 elements and there exists some permutation of elements such that:
- - element #0 is an object whose given field is equal to 1, and
- - element #1 is an object whose given field is equal to 4, and
- - element #2 is an object whose given field is equal to 5, and
- - element #3 is an object whose given field is equal to 6, and
- - element #4 is an object whose given field is equal to 7, and
- - element #5 is an object whose given field is equal to 10, and
- - element #6 is an object whose given field is equal to 40, and
- - element #7 is an object whose given field is equal to 70, and
- - element #8 is an object whose given field is equal to 60
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:140: Failure
-Value of: graph.edges()
-Expected: has 9 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 4}, and
- - element #1 is equal to {1, 5}, and
- - element #2 is equal to {4, 6}, and
- - element #3 is equal to {5, 6}, and
- - element #4 is equal to {5, 7}, and
- - element #5 is equal to {7, 6}, and
- - element #6 is equal to {10, 40}, and
- - element #7 is equal to {10, 1}, and
- - element #8 is equal to {70, 60}
-  Actual: {}
-[  FAILED  ] NonEmptyGraph.addMultipleEdges (0 ms)
+[       OK ] NonEmptyGraph.addMultipleEdges (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.addMultipleEdges
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.addMultipleEdges" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.addMultipleEdges" end time: Mar 06 13:48 CET
 "NonEmptyGraph.addMultipleEdges" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/37 Testing: NonEmptyGraph.getNode
-10/37 Test: NonEmptyGraph.getNode
+15/42 Testing: NonEmptyGraph.getNode
+15/42 Test: NonEmptyGraph.getNode
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.getNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.getNode" start time: Mar 02 15:49 CET
+"NonEmptyGraph.getNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -367,31 +391,25 @@ Note: Google Test filter = NonEmptyGraph.getNode
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.getNode
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:148: Failure
-Expected: (node) != (nullptr), actual: NULL vs (nullptr)
-[  FAILED  ] NonEmptyGraph.getNode (0 ms)
+[       OK ] NonEmptyGraph.getNode (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.getNode
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.getNode" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.getNode" end time: Mar 06 13:48 CET
 "NonEmptyGraph.getNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-11/37 Testing: NonEmptyGraph.containsEdge
-11/37 Test: NonEmptyGraph.containsEdge
+16/42 Testing: NonEmptyGraph.containsEdge
+16/42 Test: NonEmptyGraph.containsEdge
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.containsEdge" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.containsEdge" start time: Mar 02 15:49 CET
+"NonEmptyGraph.containsEdge" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -400,37 +418,25 @@ Note: Google Test filter = NonEmptyGraph.containsEdge
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.containsEdge
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:155: Failure
-Value of: graph.containsEdge(Edge(1, 4))
-  Actual: false
-Expected: true
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:156: Failure
-Value of: graph.containsEdge(Edge(4, 1))
-  Actual: false
-Expected: true
-[  FAILED  ] NonEmptyGraph.containsEdge (0 ms)
+[       OK ] NonEmptyGraph.containsEdge (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.containsEdge
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.containsEdge" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.containsEdge" end time: Mar 06 13:48 CET
 "NonEmptyGraph.containsEdge" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-12/37 Testing: NonEmptyGraph.removeNode
-12/37 Test: NonEmptyGraph.removeNode
+17/42 Testing: NonEmptyGraph.removeNode
+17/42 Test: NonEmptyGraph.removeNode
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.removeNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.removeNode" start time: Mar 02 15:49 CET
+"NonEmptyGraph.removeNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -439,48 +445,25 @@ Note: Google Test filter = NonEmptyGraph.removeNode
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.removeNode
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:169: Failure
-Value of: nodes
-Expected: has 4 elements and there exists some permutation of elements such that:
- - element #0 is an object whose given field is equal to 4, and
- - element #1 is an object whose given field is equal to 5, and
- - element #2 is an object whose given field is equal to 6, and
- - element #3 is an object whose given field is equal to 7
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:175: Failure
-Value of: edges
-Expected: has 4 elements and there exists some permutation of elements such that:
- - element #0 is equal to {4, 6}, and
- - element #1 is equal to {5, 6}, and
- - element #2 is equal to {5, 7}, and
- - element #3 is equal to {7, 6}
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:177: Failure
-Expected: graph.removeNode(1) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-[  FAILED  ] NonEmptyGraph.removeNode (0 ms)
+[       OK ] NonEmptyGraph.removeNode (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.removeNode
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.removeNode" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.removeNode" end time: Mar 06 13:48 CET
 "NonEmptyGraph.removeNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-13/37 Testing: NonEmptyGraph.removeEdge
-13/37 Test: NonEmptyGraph.removeEdge
+18/42 Testing: NonEmptyGraph.removeEdge
+18/42 Test: NonEmptyGraph.removeEdge
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.removeEdge" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.removeEdge" start time: Mar 02 15:49 CET
+"NonEmptyGraph.removeEdge" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -489,41 +472,25 @@ Note: Google Test filter = NonEmptyGraph.removeEdge
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.removeEdge
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:183: Failure
-Value of: edges
-Expected: has 5 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 5}, and
- - element #1 is equal to {4, 6}, and
- - element #2 is equal to {5, 6}, and
- - element #3 is equal to {5, 7}, and
- - element #4 is equal to {7, 6}
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:186: Failure
-Expected: graph.removeEdge(Edge(1, 4)) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-[  FAILED  ] NonEmptyGraph.removeEdge (0 ms)
+[       OK ] NonEmptyGraph.removeEdge (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.removeEdge
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.removeEdge" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.removeEdge" end time: Mar 06 13:48 CET
 "NonEmptyGraph.removeEdge" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-14/37 Testing: NonEmptyGraph.nodeCount
-14/37 Test: NonEmptyGraph.nodeCount
+19/42 Testing: NonEmptyGraph.nodeCount
+19/42 Test: NonEmptyGraph.nodeCount
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.nodeCount" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.nodeCount" start time: Mar 02 15:49 CET
+"NonEmptyGraph.nodeCount" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -532,34 +499,25 @@ Note: Google Test filter = NonEmptyGraph.nodeCount
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.nodeCount
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:190: Failure
-Expected equality of these values:
-  graph.nodeCount()
-    Which is: 42
-  5
-[  FAILED  ] NonEmptyGraph.nodeCount (0 ms)
+[       OK ] NonEmptyGraph.nodeCount (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.nodeCount
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.nodeCount" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.nodeCount" end time: Mar 06 13:48 CET
 "NonEmptyGraph.nodeCount" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-15/37 Testing: NonEmptyGraph.edgeCount
-15/37 Test: NonEmptyGraph.edgeCount
+20/42 Testing: NonEmptyGraph.edgeCount
+20/42 Test: NonEmptyGraph.edgeCount
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.edgeCount" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.edgeCount" start time: Mar 02 15:49 CET
+"NonEmptyGraph.edgeCount" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -568,34 +526,25 @@ Note: Google Test filter = NonEmptyGraph.edgeCount
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.edgeCount
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:194: Failure
-Expected equality of these values:
-  graph.edgeCount()
-    Which is: 42
-  6
-[  FAILED  ] NonEmptyGraph.edgeCount (0 ms)
+[       OK ] NonEmptyGraph.edgeCount (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.edgeCount
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.edgeCount" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.edgeCount" end time: Mar 06 13:48 CET
 "NonEmptyGraph.edgeCount" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-16/37 Testing: NonEmptyGraph.nodeDegree
-16/37 Test: NonEmptyGraph.nodeDegree
+21/42 Testing: NonEmptyGraph.nodeDegree
+21/42 Test: NonEmptyGraph.nodeDegree
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.nodeDegree" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.nodeDegree" start time: Mar 02 15:49 CET
+"NonEmptyGraph.nodeDegree" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -604,57 +553,25 @@ Note: Google Test filter = NonEmptyGraph.nodeDegree
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.nodeDegree
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:198: Failure
-Expected equality of these values:
-  graph.nodeDegree(1)
-    Which is: 42
-  2
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:199: Failure
-Expected equality of these values:
-  graph.nodeDegree(4)
-    Which is: 42
-  2
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:200: Failure
-Expected equality of these values:
-  graph.nodeDegree(5)
-    Which is: 42
-  3
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:201: Failure
-Expected equality of these values:
-  graph.nodeDegree(6)
-    Which is: 42
-  3
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:202: Failure
-Expected equality of these values:
-  graph.nodeDegree(7)
-    Which is: 42
-  2
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:203: Failure
-Expected: graph.nodeDegree(9) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-[  FAILED  ] NonEmptyGraph.nodeDegree (0 ms)
+[       OK ] NonEmptyGraph.nodeDegree (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.nodeDegree
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.nodeDegree" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.nodeDegree" end time: Mar 06 13:48 CET
 "NonEmptyGraph.nodeDegree" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-17/37 Testing: NonEmptyGraph.graphDegree
-17/37 Test: NonEmptyGraph.graphDegree
+22/42 Testing: NonEmptyGraph.graphDegree
+22/42 Test: NonEmptyGraph.graphDegree
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.graphDegree" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.graphDegree" start time: Mar 02 15:49 CET
+"NonEmptyGraph.graphDegree" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -663,34 +580,25 @@ Note: Google Test filter = NonEmptyGraph.graphDegree
 [----------] Global test environment set-up.
 [----------] 1 test from NonEmptyGraph
 [ RUN      ] NonEmptyGraph.graphDegree
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:207: Failure
-Expected equality of these values:
-  graph.graphDegree()
-    Which is: 42
-  3
-[  FAILED  ] NonEmptyGraph.graphDegree (0 ms)
+[       OK ] NonEmptyGraph.graphDegree (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] NonEmptyGraph.graphDegree
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"NonEmptyGraph.graphDegree" end time: Mar 02 15:49 CET
+Test Passed.
+"NonEmptyGraph.graphDegree" end time: Mar 06 13:48 CET
 "NonEmptyGraph.graphDegree" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-18/37 Testing: NonEmptyGraph.coloring
-18/37 Test: NonEmptyGraph.coloring
+23/42 Testing: NonEmptyGraph.coloring
+23/42 Test: NonEmptyGraph.coloring
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.coloring" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.coloring" start time: Mar 02 15:49 CET
+"NonEmptyGraph.coloring" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -703,6 +611,18 @@ Note: Google Test filter = NonEmptyGraph.coloring
 Value of: *colors.begin() != 0
   Actual: false
 Expected: true
+/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:224: Failure
+Expected: (graph.getNode(edge.a)->color) != (graph.getNode(edge.b)->color), actual: 0 vs 0
+/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:224: Failure
+Expected: (graph.getNode(edge.a)->color) != (graph.getNode(edge.b)->color), actual: 0 vs 0
+/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:224: Failure
+Expected: (graph.getNode(edge.a)->color) != (graph.getNode(edge.b)->color), actual: 0 vs 0
+/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:224: Failure
+Expected: (graph.getNode(edge.a)->color) != (graph.getNode(edge.b)->color), actual: 0 vs 0
+/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:224: Failure
+Expected: (graph.getNode(edge.a)->color) != (graph.getNode(edge.b)->color), actual: 0 vs 0
+/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:224: Failure
+Expected: (graph.getNode(edge.a)->color) != (graph.getNode(edge.b)->color), actual: 0 vs 0
 [  FAILED  ] NonEmptyGraph.coloring (0 ms)
 [----------] 1 test from NonEmptyGraph (0 ms total)
 
@@ -717,15 +637,15 @@ Expected: true
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"NonEmptyGraph.coloring" end time: Mar 02 15:49 CET
+"NonEmptyGraph.coloring" end time: Mar 06 13:48 CET
 "NonEmptyGraph.coloring" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-19/37 Testing: NonEmptyGraph.clear
-19/37 Test: NonEmptyGraph.clear
+24/42 Testing: NonEmptyGraph.clear
+24/42 Test: NonEmptyGraph.clear
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=NonEmptyGraph.clear" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"NonEmptyGraph.clear" start time: Mar 02 15:49 CET
+"NonEmptyGraph.clear" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -744,15 +664,15 @@ Note: Google Test filter = NonEmptyGraph.clear
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"NonEmptyGraph.clear" end time: Mar 02 15:49 CET
+"NonEmptyGraph.clear" end time: Mar 06 13:48 CET
 "NonEmptyGraph.clear" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-20/37 Testing: EmptyGraph.nodes
-20/37 Test: EmptyGraph.nodes
+25/42 Testing: EmptyGraph.nodes
+25/42 Test: EmptyGraph.nodes
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.nodes" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.nodes" start time: Mar 02 15:49 CET
+"EmptyGraph.nodes" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -771,15 +691,15 @@ Note: Google Test filter = EmptyGraph.nodes
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyGraph.nodes" end time: Mar 02 15:49 CET
+"EmptyGraph.nodes" end time: Mar 06 13:48 CET
 "EmptyGraph.nodes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-21/37 Testing: EmptyGraph.edges
-21/37 Test: EmptyGraph.edges
+26/42 Testing: EmptyGraph.edges
+26/42 Test: EmptyGraph.edges
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.edges" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.edges" start time: Mar 02 15:49 CET
+"EmptyGraph.edges" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -795,18 +715,18 @@ Note: Google Test filter = EmptyGraph.edges
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyGraph.edges" end time: Mar 02 15:49 CET
+"EmptyGraph.edges" end time: Mar 06 13:48 CET
 "EmptyGraph.edges" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-22/37 Testing: EmptyGraph.addNode
-22/37 Test: EmptyGraph.addNode
+27/42 Testing: EmptyGraph.addNode
+27/42 Test: EmptyGraph.addNode
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.addNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.addNode" start time: Mar 02 15:49 CET
+"EmptyGraph.addNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -815,31 +735,25 @@ Note: Google Test filter = EmptyGraph.addNode
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.addNode
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:249: Failure
-Expected: (node) != (nullptr), actual: NULL vs (nullptr)
-[  FAILED  ] EmptyGraph.addNode (0 ms)
+[       OK ] EmptyGraph.addNode (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.addNode
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.addNode" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.addNode" end time: Mar 06 13:48 CET
 "EmptyGraph.addNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-23/37 Testing: EmptyGraph.addEdge
-23/37 Test: EmptyGraph.addEdge
+28/42 Testing: EmptyGraph.addEdge
+28/42 Test: EmptyGraph.addEdge
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.addEdge" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.addEdge" start time: Mar 02 15:49 CET
+"EmptyGraph.addEdge" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -848,37 +762,25 @@ Note: Google Test filter = EmptyGraph.addEdge
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.addEdge
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:260: Failure
-Value of: graph.addEdge(Edge(1, 4))
-  Actual: false
-Expected: true
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:262: Failure
-Value of: edges
-Expected: has 1 element and that element is equal to {1, 4}
-  Actual: {}
-[  FAILED  ] EmptyGraph.addEdge (0 ms)
+[       OK ] EmptyGraph.addEdge (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.addEdge
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.addEdge" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.addEdge" end time: Mar 06 13:48 CET
 "EmptyGraph.addEdge" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-24/37 Testing: EmptyGraph.addMultipleEdges
-24/37 Test: EmptyGraph.addMultipleEdges
+29/42 Testing: EmptyGraph.addMultipleEdges
+29/42 Test: EmptyGraph.addMultipleEdges
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.addMultipleEdges" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.addMultipleEdges" start time: Mar 02 15:49 CET
+"EmptyGraph.addMultipleEdges" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -887,48 +789,25 @@ Note: Google Test filter = EmptyGraph.addMultipleEdges
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.addMultipleEdges
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:277: Failure
-Value of: graph.nodes()
-Expected: has 5 elements and there exists some permutation of elements such that:
- - element #0 is an object whose given field is equal to 1, and
- - element #1 is an object whose given field is equal to 4, and
- - element #2 is an object whose given field is equal to 5, and
- - element #3 is an object whose given field is equal to 6, and
- - element #4 is an object whose given field is equal to 7
-  Actual: {}
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:283: Failure
-Value of: graph.edges()
-Expected: has 6 elements and there exists some permutation of elements such that:
- - element #0 is equal to {1, 4}, and
- - element #1 is equal to {1, 5}, and
- - element #2 is equal to {4, 6}, and
- - element #3 is equal to {5, 6}, and
- - element #4 is equal to {5, 7}, and
- - element #5 is equal to {7, 6}
-  Actual: {}
-[  FAILED  ] EmptyGraph.addMultipleEdges (0 ms)
+[       OK ] EmptyGraph.addMultipleEdges (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.addMultipleEdges
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.addMultipleEdges" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.addMultipleEdges" end time: Mar 06 13:48 CET
 "EmptyGraph.addMultipleEdges" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-25/37 Testing: EmptyGraph.getNode
-25/37 Test: EmptyGraph.getNode
+30/42 Testing: EmptyGraph.getNode
+30/42 Test: EmptyGraph.getNode
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.getNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.getNode" start time: Mar 02 15:49 CET
+"EmptyGraph.getNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -947,15 +826,15 @@ Note: Google Test filter = EmptyGraph.getNode
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyGraph.getNode" end time: Mar 02 15:49 CET
+"EmptyGraph.getNode" end time: Mar 06 13:48 CET
 "EmptyGraph.getNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-26/37 Testing: EmptyGraph.containsEdge
-26/37 Test: EmptyGraph.containsEdge
+31/42 Testing: EmptyGraph.containsEdge
+31/42 Test: EmptyGraph.containsEdge
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.containsEdge" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.containsEdge" start time: Mar 02 15:49 CET
+"EmptyGraph.containsEdge" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -971,18 +850,18 @@ Note: Google Test filter = EmptyGraph.containsEdge
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyGraph.containsEdge" end time: Mar 02 15:49 CET
+"EmptyGraph.containsEdge" end time: Mar 06 13:48 CET
 "EmptyGraph.containsEdge" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-27/37 Testing: EmptyGraph.removeNode
-27/37 Test: EmptyGraph.removeNode
+32/42 Testing: EmptyGraph.removeNode
+32/42 Test: EmptyGraph.removeNode
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.removeNode" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.removeNode" start time: Mar 02 15:49 CET
+"EmptyGraph.removeNode" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -991,32 +870,25 @@ Note: Google Test filter = EmptyGraph.removeNode
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.removeNode
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:296: Failure
-Expected: graph.removeNode(1) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-[  FAILED  ] EmptyGraph.removeNode (0 ms)
+[       OK ] EmptyGraph.removeNode (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.removeNode
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.removeNode" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.removeNode" end time: Mar 06 13:48 CET
 "EmptyGraph.removeNode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-28/37 Testing: EmptyGraph.removeEdge
-28/37 Test: EmptyGraph.removeEdge
+33/42 Testing: EmptyGraph.removeEdge
+33/42 Test: EmptyGraph.removeEdge
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.removeEdge" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.removeEdge" start time: Mar 02 15:49 CET
+"EmptyGraph.removeEdge" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1025,32 +897,25 @@ Note: Google Test filter = EmptyGraph.removeEdge
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.removeEdge
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:300: Failure
-Expected: graph.removeEdge(Edge(1, 4)) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-[  FAILED  ] EmptyGraph.removeEdge (0 ms)
+[       OK ] EmptyGraph.removeEdge (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.removeEdge
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.removeEdge" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.removeEdge" end time: Mar 06 13:48 CET
 "EmptyGraph.removeEdge" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-29/37 Testing: EmptyGraph.nodeCount
-29/37 Test: EmptyGraph.nodeCount
+34/42 Testing: EmptyGraph.nodeCount
+34/42 Test: EmptyGraph.nodeCount
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.nodeCount" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.nodeCount" start time: Mar 02 15:49 CET
+"EmptyGraph.nodeCount" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1059,34 +924,25 @@ Note: Google Test filter = EmptyGraph.nodeCount
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.nodeCount
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:304: Failure
-Expected equality of these values:
-  graph.nodeCount()
-    Which is: 42
-  0
-[  FAILED  ] EmptyGraph.nodeCount (0 ms)
+[       OK ] EmptyGraph.nodeCount (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.nodeCount
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.nodeCount" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.nodeCount" end time: Mar 06 13:48 CET
 "EmptyGraph.nodeCount" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-30/37 Testing: EmptyGraph.edgeCount
-30/37 Test: EmptyGraph.edgeCount
+35/42 Testing: EmptyGraph.edgeCount
+35/42 Test: EmptyGraph.edgeCount
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.edgeCount" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.edgeCount" start time: Mar 02 15:49 CET
+"EmptyGraph.edgeCount" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1095,34 +951,25 @@ Note: Google Test filter = EmptyGraph.edgeCount
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.edgeCount
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:308: Failure
-Expected equality of these values:
-  graph.edgeCount()
-    Which is: 42
-  0
-[  FAILED  ] EmptyGraph.edgeCount (0 ms)
+[       OK ] EmptyGraph.edgeCount (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.edgeCount
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.edgeCount" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.edgeCount" end time: Mar 06 13:48 CET
 "EmptyGraph.edgeCount" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-31/37 Testing: EmptyGraph.nodeDegree
-31/37 Test: EmptyGraph.nodeDegree
+36/42 Testing: EmptyGraph.nodeDegree
+36/42 Test: EmptyGraph.nodeDegree
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.nodeDegree" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.nodeDegree" start time: Mar 02 15:49 CET
+"EmptyGraph.nodeDegree" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1131,32 +978,25 @@ Note: Google Test filter = EmptyGraph.nodeDegree
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.nodeDegree
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:312: Failure
-Expected: graph.nodeDegree(1) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-[  FAILED  ] EmptyGraph.nodeDegree (0 ms)
+[       OK ] EmptyGraph.nodeDegree (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.nodeDegree
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.nodeDegree" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.nodeDegree" end time: Mar 06 13:48 CET
 "EmptyGraph.nodeDegree" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-32/37 Testing: EmptyGraph.graphDegree
-32/37 Test: EmptyGraph.graphDegree
+37/42 Testing: EmptyGraph.graphDegree
+37/42 Test: EmptyGraph.graphDegree
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.graphDegree" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.graphDegree" start time: Mar 02 15:49 CET
+"EmptyGraph.graphDegree" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1165,34 +1005,25 @@ Note: Google Test filter = EmptyGraph.graphDegree
 [----------] Global test environment set-up.
 [----------] 1 test from EmptyGraph
 [ RUN      ] EmptyGraph.graphDegree
-/home/boriss/Documents/VUT FIT/IVS/proj1/tdd_tests.cpp:316: Failure
-Expected equality of these values:
-  graph.graphDegree()
-    Which is: 42
-  0
-[  FAILED  ] EmptyGraph.graphDegree (0 ms)
+[       OK ] EmptyGraph.graphDegree (0 ms)
 [----------] 1 test from EmptyGraph (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] EmptyGraph.graphDegree
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"EmptyGraph.graphDegree" end time: Mar 02 15:49 CET
+Test Passed.
+"EmptyGraph.graphDegree" end time: Mar 06 13:48 CET
 "EmptyGraph.graphDegree" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-33/37 Testing: EmptyGraph.coloring
-33/37 Test: EmptyGraph.coloring
+38/42 Testing: EmptyGraph.coloring
+38/42 Test: EmptyGraph.coloring
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.coloring" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.coloring" start time: Mar 02 15:49 CET
+"EmptyGraph.coloring" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1208,18 +1039,18 @@ Note: Google Test filter = EmptyGraph.coloring
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyGraph.coloring" end time: Mar 02 15:49 CET
+"EmptyGraph.coloring" end time: Mar 06 13:48 CET
 "EmptyGraph.coloring" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-34/37 Testing: EmptyGraph.clear
-34/37 Test: EmptyGraph.clear
+39/42 Testing: EmptyGraph.clear
+39/42 Test: EmptyGraph.clear
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=EmptyGraph.clear" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"EmptyGraph.clear" start time: Mar 02 15:49 CET
+"EmptyGraph.clear" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1238,15 +1069,15 @@ Note: Google Test filter = EmptyGraph.clear
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EmptyGraph.clear" end time: Mar 02 15:49 CET
+"EmptyGraph.clear" end time: Mar 06 13:48 CET
 "EmptyGraph.clear" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-35/37 Testing: Edges.equal
-35/37 Test: Edges.equal
+40/42 Testing: Edges.equal
+40/42 Test: Edges.equal
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=Edges.equal" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"Edges.equal" start time: Mar 02 15:49 CET
+"Edges.equal" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1265,15 +1096,15 @@ Note: Google Test filter = Edges.equal
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Edges.equal" end time: Mar 02 15:49 CET
+"Edges.equal" end time: Mar 06 13:48 CET
 "Edges.equal" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-36/37 Testing: Edges.nonEqual
-36/37 Test: Edges.nonEqual
+41/42 Testing: Edges.nonEqual
+41/42 Test: Edges.nonEqual
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=Edges.nonEqual" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"Edges.nonEqual" start time: Mar 02 15:49 CET
+"Edges.nonEqual" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1292,15 +1123,15 @@ Note: Google Test filter = Edges.nonEqual
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Edges.nonEqual" end time: Mar 02 15:49 CET
+"Edges.nonEqual" end time: Mar 06 13:48 CET
 "Edges.nonEqual" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-37/37 Testing: Edges.toStringStream
-37/37 Test: Edges.toStringStream
+42/42 Testing: Edges.toStringStream
+42/42 Test: Edges.toStringStream
 Command: "/home/boriss/Documents/VUT FIT/IVS/proj1/build/tdd_test" "--gtest_filter=Edges.toStringStream" "--gtest_also_run_disabled_tests"
 Directory: /home/boriss/Documents/VUT FIT/IVS/proj1/build
-"Edges.toStringStream" start time: Mar 02 15:49 CET
+"Edges.toStringStream" start time: Mar 06 13:48 CET
 Output:
 ----------------------------------------------------------
 Running main() from /home/boriss/Documents/VUT FIT/IVS/proj1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1319,8 +1150,8 @@ Note: Google Test filter = Edges.toStringStream
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Edges.toStringStream" end time: Mar 02 15:49 CET
+"Edges.toStringStream" end time: Mar 06 13:48 CET
 "Edges.toStringStream" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 02 15:49 CET
+End testing: Mar 06 13:48 CET
