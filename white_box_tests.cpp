@@ -51,6 +51,7 @@ protected:
 
     virtual void SetUp(){
         map = hash_map_ctor();
+        
         hash_map_put(map, "hello", 5);
         hash_map_put(map, "hi", 10);
         hash_map_put(map, "howdy", 15);
@@ -95,6 +96,20 @@ TEST_F(EmptyTable, pop){
     EXPECT_EQ(hash_map_pop(map, "hola", &value), KEY_ERROR);
 }
 
+TEST_F(EmptyTable, put){
+    EXPECT_EQ(hash_map_put(map, "ahoj", 1), OK);
+    EXPECT_EQ(hash_map_put(map, "ahoj", 2), KEY_ALREADY_EXISTS);
+    EXPECT_EQ(hash_map_capacity(map), 8);
+    hash_map_put(map, "a", 1);
+    hash_map_put(map, "b", 2);
+    hash_map_put(map, "c", 3);
+    hash_map_put(map, "d", 4);
+    hash_map_put(map, "e", 5);
+    EXPECT_EQ(hash_map_capacity(map), 16);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
 TEST_F(NonEmptyTable, contains){
@@ -138,6 +153,18 @@ TEST_F(NonEmptyTable, pop){
     int value = 1;
     EXPECT_EQ(hash_map_pop(map, "hola", &value), OK);
     EXPECT_EQ(hash_map_contains(map, "hola"), false);
+    
+}
+
+TEST_F(NonEmptyTable, put){
+    EXPECT_EQ(hash_map_put(map,"ahoj", 69), OK);
+    EXPECT_EQ(hash_map_contains(map, "test"), OK);
+    EXPECT_EQ(hash_map_put(map,"ahoj", 2), KEY_ALREADY_EXISTS);
+    EXPECT_EQ(hash_map_capacity(map), 16);
+}
+
+TEST_F(NonEmptyTable, hash){
+    hash_map_item_t item;
     
 }
 
